@@ -1,9 +1,9 @@
 
-# Python cache files
+# Python
 __pycache__/
 *.py[cod]
-
-# Virtual environments
+*.pyd
+.Python
 venv/
 .venv/
 env/
@@ -12,13 +12,24 @@ ENV/
 # Environment secrets
 .env
 .env.*
+!.env.example
 
 # Local databases
 *.db
 *.sqlite
 *.sqlite3
 
-# Test and coverage files
-.pytest_cache/
-.coverage
-htmlcov/
+# React / Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+token.json
+credentials.json
+google_calendar_token.json
+google_calendar_pending.json
